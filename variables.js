@@ -36,3 +36,9 @@ let object = {
 };
 
 console.log(object);
+
+let list = [1, 2, 3, 4, 5];
+
+for (item of list) {
+	console.log(item);
+}
