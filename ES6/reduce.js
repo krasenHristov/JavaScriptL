@@ -47,7 +47,7 @@ let beatles2 = names.reduce((accumulator, beatle) => {
 }, []);
 
 
-var desks = [
+const desks = [
   { type: 'sitting' },
   { type: 'standing' },
   { type: 'sitting' },

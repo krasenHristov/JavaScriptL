@@ -11,6 +11,7 @@ const notBalanced = "[[[[]]]]]]]" // not balanced
 // Write a function that takes a string and returns true if the string is balanced
 // and false if it is not balanced
 
+// ES5 with for loop and includes method
 function isBalancedFor(str) {
   let open = ["(", "[", "{"];
   let close = [")", "]", "}"];
@@ -32,6 +33,7 @@ console.log("for loop balanced", isBalancedFor(balanced));
 console.log("for loop not ballanced", isBalancedFor(notBalanced));
 
 // ES6 with reduce
+// 0 is the initial value of PrevChar(accumulator)
 function isBalancedRed(str) {
   return !str.split("").reduce((PrevChar, thisChar) => {
     if (thisChar === "(" || thisChar === "[" || thisChar === "{") {
